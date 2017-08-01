@@ -1,0 +1,99 @@
+.root {
+	-fx-background-color: #60646b;
+	-fx-focus-color: transparent;
+	-fx-faint-focus-color: transparent;
+	-fx-accent: #3498db;
+}
+
+.dialog-pane {
+	-fx-background-color: #60646b;
+}
+
+
+.dialog-pane .header-panel {
+	-fx-background-color: #60646b;
+}
+
+.text-field	 {
+	-fx-background-radius: none;
+	-fx-border-color: #6d7077;
+	-fx-border-width: 2px;
+}
+
+#header {
+	-fx-font-size: 20px;
+}
+
+.label {
+	-fx-text-fill: white;
+	-fx-font-size: 16px;
+}
+
+.button {
+	-fx-text-fill: white;
+	-fx-font-size: 15px;
+	-fx-background-color: none;
+	-fx-background-radius: 0;
+	-fx-border-color: white;
+	-fx-border-width: 2px;
+}
+
+.button:hover {
+	-fx-background-color: white;
+	-fx-text-fill: black;
+	
+	-fx-background-insets: 0;
+}
+
+.check-box {
+	-fx-text-fill: white;
+	-fx-font-size: 13px;
+}
+
+.check-box .box {
+	-fx-background-color: transparent;
+	-fx-border-color: white;
+	-fx-border-width: 2px;
+}
+
+.check-box:selected .mark {
+	-fx-background-color: white;
+}
+
+.combo-box {
+	-fx-text-fill: white;
+	-fx-font-size: 15px;
+	-fx-background-color: none;
+	-fx-background-radius: 0;
+	-fx-border-color: white;
+	-fx-border-width: 2px;
+}
+
+.combo-box .arrow {
+	-fx-background-color: white;
+}
+
+.combo-box .list-view .list-cell {
+	-fx-text-fill: black;
+	-fx-background-color: #ecf0f1;
+}
+
+.combo-box .list-cell {
+	-fx-text-fill: white;
+}
+
+.combo-box .list-view {
+	-fx-effect: null;
+	-fx-background-radius: 0;
+	-fx-background-insets: 0;
+	-fx-padding: 0;
+}
+
+.combo-box .list-view .list-cell:hover {
+	-fx-background-color: #3498db;
+	-fx-text-fill: white;
+}
+.combo-box .list-view .list-cell:selected {
+	-fx-background-color: #7f8c8d;
+	-fx-text-fill: white;
+}

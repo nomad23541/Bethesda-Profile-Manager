@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="263.0" prefWidth="471.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chrisreading.bpm.gui.controller.RootController">
+   <center>
+      <AnchorPane prefHeight="309.0" prefWidth="455.0" BorderPane.alignment="CENTER">
+         <children>
+            <GridPane fx:id="gridPane" layoutX="20.0" layoutY="51.0" prefHeight="110.0" prefWidth="431.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="56.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="249.0" minWidth="10.0" prefWidth="186.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="249.0" minWidth="10.0" prefWidth="43.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="249.0" minWidth="10.0" prefWidth="144.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="59.0" minHeight="0.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="59.0" minHeight="0.0" prefHeight="23.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Profile:" GridPane.rowIndex="1" />
+                  <ComboBox fx:id="comboBoxProfile" prefHeight="35.0" prefWidth="197.0" promptText="No Profiles" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button fx:id="btnNewProfile" mnemonicParsing="false" onAction="#onNewProfile" text="+" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Button fx:id="btnPlay" mnemonicParsing="false" onAction="#onPlay" prefHeight="25.0" prefWidth="84.0" text="Play" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="1" />
+                  <CheckBox fx:id="checkMark" mnemonicParsing="false" prefHeight="22.0" prefWidth="115.0" text="Close on Play" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="2" />
+                  <Label text="Game:" />
+                  <ComboBox fx:id="comboBoxGame" prefHeight="35.0" prefWidth="213.0" promptText="Select a game" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <Label id="header" layoutX="20.0" layoutY="14.0" text="Bethesda Profile Manager" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
